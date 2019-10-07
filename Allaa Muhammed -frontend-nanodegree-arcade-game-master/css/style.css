@@ -1,0 +1,113 @@
+body {
+    text-align: center;
+    background-color: #eaeded;
+}
+
+//Winner Case Style
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 500ms;
+    opacity: 0.1;
+    
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    margin: 150px auto;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    width: 50%;
+     position: absolute;
+    top: -2%;
+    left: 25%;
+    display: none;
+    z-index: 99999999;
+
+}
+  
+.popup h3 {
+    margin-top: 0;
+    color: #ec643f;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+
+.popup .CongratsDiv,
+.Result {
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
+}
+
+
+#NumberOfStars li {
+    display: inline-block;
+}
+
+#play-again {
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    background-color: #fab50b;
+    cursor: pointer;
+}
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+}
+
+
+.fa-star {
+    color: #fab50b;
+    animation-name: heartBeat;
+    animation-duration: .75s ;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
